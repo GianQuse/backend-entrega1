@@ -2,10 +2,10 @@
 
 <ul id="productsList">
   {{#each products}}
-    <li>
-      {{this.title}} - ${{this.price}}
-      <button onclick="deleteProduct('{{this.id}}')">Eliminar</button>
-    </li>
+  <li>
+    {{this.title}} - ${{this.price}}
+    <button onclick="deleteProduct('{{this.id}}')">Eliminar</button>
+  </li>
   {{/each}}
 </ul>
 
@@ -17,7 +17,12 @@
   <input type="text" name="code" placeholder="Codigo" required>
   <input type="number" name="price" placeholder="Precio" required />
   <input type="number" name="stock" placeholder="Stock" required />
-  <input type="text" name="category" placeholder="Categoria" required>
+  <select name="category" required>
+    <option value="" disabled selected>Seleccionar categoría</option>
+    <option value="Hamburguesa">Hamburguesa</option>
+    <option value="Empanadas">Empanadas</option>
+    <option value="Pizza">Pizza</option>
+  </select>
   <button type="submit">Agregar</button>
 </form>
 

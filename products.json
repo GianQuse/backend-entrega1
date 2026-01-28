@@ -6,17 +6,33 @@
     "code": "ab123",
     "price": 12000,
     "stock": 50,
-    "category": "Hamburguesas",
-    "thumbnails": []
+    "category": "Hamburguesas"
   },
   {
     "id": 3,
-    "title": "Hamburguesa Cheddar",
-    "description": "Hamburguesa, queso cheddar",
-    "code": "ab124",
-    "price": 15000,
-    "stock": 20,
-    "category": "Hamburguesas",
-    "thumbnails": []
+    "title": "Hamburguesa con Cheddar",
+    "description": "Cheddar y BBQ",
+    "code": "ab1234",
+    "price": 20000,
+    "stock": 50,
+    "category": "Hamburguesa"
+  },
+  {
+    "id": 4,
+    "title": "Empanada JyQ",
+    "description": "Jamon y Queso",
+    "code": "ab145",
+    "price": 1700,
+    "stock": 50,
+    "category": "Empanadas"
+  },
+  {
+    "id": 5,
+    "title": "Empanada Lomo",
+    "description": "Lomo desmechado",
+    "code": "ep124",
+    "price": 2000,
+    "stock": 50,
+    "category": "Empanadas"
   }
 ]

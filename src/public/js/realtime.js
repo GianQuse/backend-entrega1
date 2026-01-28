@@ -7,9 +7,14 @@ form.addEventListener("submit", e => {
   e.preventDefault();
 
   const data = new FormData(form);
+
   const product = {
     title: data.get("title"),
-    price: Number(data.get("price"))
+    description: data.get("description"),
+    code: data.get("code"),
+    price: Number(data.get("price")),
+    stock: Number(data.get("stock")),
+    category: data.get("category")
   };
 
   socket.emit("addProduct", product);

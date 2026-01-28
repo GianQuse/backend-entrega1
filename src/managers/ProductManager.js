@@ -23,15 +23,13 @@ export default class ProductManager {
             price,
             stock,
             category,
-            thumbnails
         } = product;
 
         if (
             !title || !description || !code ||
             typeof price !== 'number' ||
             typeof stock !== 'number' ||
-            !category ||
-            !Array.isArray(thumbnails)
+            !category
         ) {
             throw new Error("Campos inválidos o incompletos");
         }
@@ -48,10 +46,8 @@ export default class ProductManager {
             description,
             code,
             price,
-            status,
             stock,
-            category,
-            thumbnails
+            category
         };
 
         products.push(newProduct);
@@ -85,7 +81,9 @@ export default class ProductManager {
 
     async deleteProduct(id) {
         let products = await this.getProducts();
-        const newProducts = products.filter(product => product.id !== id);
+        const idNumber = Number(id);
+
+        const newProducts = products.filter(product => product.id !== idNumber);
         if (newProducts.length === products.length) return null;
         await fs.writeFile(this.path, JSON.stringify(newProducts, null, 2));
         return true;
