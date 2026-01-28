@@ -21,7 +21,6 @@ export default class ProductManager {
             description,
             code,
             price,
-            status,
             stock,
             category,
             thumbnails
@@ -30,7 +29,6 @@ export default class ProductManager {
         if (
             !title || !description || !code ||
             typeof price !== 'number' ||
-            typeof status !== 'boolean' ||
             typeof stock !== 'number' ||
             !category ||
             !Array.isArray(thumbnails)

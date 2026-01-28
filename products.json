@@ -5,7 +5,6 @@
     "description": "Hamburguesa, queso, tomate",
     "code": "ab123",
     "price": 12000,
-    "status": true,
     "stock": 50,
     "category": "Hamburguesas",
     "thumbnails": []
@@ -16,7 +15,6 @@
     "description": "Hamburguesa, queso cheddar",
     "code": "ab124",
     "price": 15000,
-    "status": true,
     "stock": 20,
     "category": "Hamburguesas",
     "thumbnails": []
