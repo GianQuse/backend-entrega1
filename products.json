@@ -28,10 +28,10 @@
   },
   {
     "id": 5,
-    "title": "Empanada Lomo",
-    "description": "Lomo desmechado",
-    "code": "ep124",
-    "price": 2000,
+    "title": "Empanada lomo",
+    "description": "Carne cortada a cuchillo con morrones",
+    "code": "emp123",
+    "price": 2500,
     "stock": 50,
     "category": "Empanadas"
   }
